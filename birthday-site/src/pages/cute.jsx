@@ -1,17 +1,21 @@
-// src/pages/cute.jsx
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './cute.css';
 
 function Cute() {
   const navigate = useNavigate();
 
   return (
-    <div className="text-center mt-10">
-      <h1 className="text-pink-500 text-3xl font-bold">This is the cute page 🐰</h1>
-      <button
-        onClick={() => navigate('/pro')}
-        className="mt-4 bg-blue-500 px-4 py-2 text-white rounded-lg hover:scale-105 transition"
-      >
-        Click to be professional
+    <div className="cute-page">
+      <h1>You're the Cutest 🎀</h1>
+      <img
+        src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif"
+        alt="Cute"
+        className="cute-gif"
+      />
+      <p>Hope this page makes you smile!</p>
+      <button className="cute-button" onClick={() => navigate('/pro')}>
+        Click to be Professional 💼
       </button>
     </div>
   );

@@ -1,0 +1,29 @@
+.cute-page {
+  background-color: #ffe6f0;
+  font-family: "Comic Sans MS", cursive;
+  color: #ff69b4;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cute-gif {
+  width: 250px;
+  margin: 1rem auto;
+  border-radius: 20px;
+}
+
+.cute-button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.3s ease;
+}
+
+.cute-button:hover {
+  background-color: #ff69b4;
+}
