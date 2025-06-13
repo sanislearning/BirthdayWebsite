@@ -1,4 +1,4 @@
-/* pro.css */
+/* pro.css - Responsive Version */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Habibi:wght@400&family=Playfair+Display:wght@400&family=Caveat:wght@400&family=Cormorant:wght@400&display=swap');
 
 * {
@@ -13,38 +13,42 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2F2E8;
 }
 
-/* 1. Real Frame (Outermost frame) */
+/* 1. Real Frame (Outermost frame) - Now responsive */
 .real-frame {
   display: flex;
-  width: 1280px;
-  height: 832px;
-  padding: 27px 19px 26px 19px;
+  width: min(90vw, 1280px);
+  height: min(90vh, 832px);
+  padding: min(2.1vw, 27px) min(1.5vw, 19px) min(2vw, 26px) min(1.5vw, 19px);
   justify-content: center;
   align-items: center;
   background: #F2F2E8;
   margin: 0 auto;
 }
 
-/* 2. Outline Frame */
+/* 2. Outline Frame - Responsive */
 .outline-frame {
-  width: 1242px;
-  height: 779px;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   border: 2px solid #0068A7;
   position: relative;
-  padding: 40px;
+  padding: min(3.1vw, 40px);
 }
 
-/* 3. BIRTHDAY Text */
+/* 3. BIRTHDAY Text - Responsive font size */
 .birthday-text {
-  width: 1140px;
-  height: 256px;
+  width: 100%;
+  height: auto;
   flex-shrink: 0;
   color: #0766A4;
   font-family: 'Italiana', serif;
-  font-size: 270px;
+  font-size: min(21vw, 270px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -53,76 +57,80 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: -20px;
+  margin-top: min(-1.6vw, -20px);
 }
 
-/* Top Section */
+/* Top Section - Responsive layout */
 .top-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: min(3.1vw, 40px);
+  flex-wrap: wrap;
+  gap: min(1.5vw, 20px);
 }
 
-/* Date Section (Top Left) */
+/* Date Section (Top Left) - Responsive */
 .date-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: min(16vw, 200px);
 }
 
-/* 4. Text "24" */
+/* 4. Text "24" - Responsive */
 .date-number {
-  width: 65px;
-  height: 50px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Habibi', serif;
-  font-size: 48px;
+  font-size: min(3.75vw, 48px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-/* 5. Text "june 2025" */
+/* 5. Text "june 2025" - Responsive */
 .date-month {
-  width: 71px;
-  height: 14px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Habibi', serif;
-  font-size: 14px;
+  font-size: min(1.1vw, 14px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 10px;
+  margin-bottom: min(0.8vw, 10px);
 }
 
-/* 6. Text "Truly a wonderful day" */
+/* 6. Text "Truly a wonderful day" - Responsive */
 .wonderful-day {
-  width: 152px;
-  height: 14px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Habibi', serif;
-  font-size: 14px;
+  font-size: min(1.1vw, 14px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-/* Button (Top Center) */
+/* Button (Top Center) - Responsive */
 .click-button {
   background-color: #0068A7;
   color: white;
   border: none;
-  border-radius: 25px;
-  padding: 12px 24px;
+  border-radius: min(2vw, 25px);
+  padding: min(0.9vw, 12px) min(1.9vw, 24px);
   font-family: 'Habibi', serif;
-  font-size: 16px;
+  font-size: min(1.25vw, 16px);
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .click-button:hover {
@@ -130,142 +138,232 @@ body {
   transform: translateY(-2px);
 }
 
-/* 10. Text "Gentle as a Panda..." (Top Right) */
+/* 10. Text "Gentle as a Panda..." (Top Right) - Responsive */
 .panda-text {
-  width: 314px;
-  height: 45px;
+  width: auto;
+  max-width: min(24.5vw, 314px);
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Caveat', cursive;
-  font-size: 20px;
+  font-size: min(1.56vw, 20px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: right;
 }
 
-/* Thank You Section (Left Side) */
+/* Thank You Section (Left Side) - Responsive positioning */
 .thank-you-section {
   position: absolute;
-  left: 40px;
-  top: 180px;
+  left: min(3.1vw, 40px);
+  top: min(14vw, 180px);
 }
 
-/* 7. Text "Thank you for being..." */
+/* 7. Text "Thank you for being..." - Responsive */
 .thank-you-text {
-  width: 208px;
-  height: 31px;
+  width: auto;
+  max-width: min(16.25vw, 208px);
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: min(0.94vw, 12px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 30px;
+  margin-bottom: min(2.3vw, 30px);
 }
 
-/* 9. Rectangle1 */
+/* 9. Rectangle1 - Responsive */
 .rectangle1 {
-  width: 48px;
+  width: min(3.75vw, 48px);
   height: 1px;
   flex-shrink: 0;
   background: #176282;
-  margin-bottom: 20px;
+  margin-bottom: min(1.56vw, 20px);
 }
 
-/* 13. Text "HAPPY" (Top Right) */
+/* 13. Text "HAPPY" (Top Right) - Responsive */
 .happy-text {
-  width: 173px;
-  height: 34px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
   color: #29505F;
   font-family: 'Cormorant', serif;
-  font-size: 40px;
+  font-size: min(3.1vw, 40px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 11.2px;
+  letter-spacing: min(0.88vw, 11.2px);
   position: absolute;
-  top: 180px;
-  right: 40px;
+  top: min(14vw, 180px);
+  right: min(3.1vw, 40px);
 }
 
-/* Bottom Section */
+/* Bottom Section - Responsive */
 .bottom-section {
   position: absolute;
-  bottom: 40px;
-  width: calc(100% - 80px);
+  bottom: min(3.1vw, 40px);
+  width: calc(100% - min(6.25vw, 80px));
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+  gap: min(1.5vw, 20px);
 }
 
-/* Bottom Left */
+/* Bottom Left - Responsive */
 .bottom-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: min(1.17vw, 15px);
+  max-width: min(20vw, 250px);
 }
 
-/* 11. Text "A thousand blessings..." */
+/* 11. Text "A thousand blessings..." - Responsive */
 .blessings-text {
-  width: 208px;
-  height: 43px;
+  width: auto;
+  max-width: min(16.25vw, 208px);
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Caveat', cursive;
-  font-size: 20px;
+  font-size: min(1.56vw, 20px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-/* 12. Text "In a world of neutrals..." */
+/* 12. Text "In a world of neutrals..." - Responsive */
 .neutral-pastel-text {
-  width: 217px;
-  height: 33px;
+  width: auto;
+  max-width: min(17vw, 217px);
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: min(0.94vw, 12px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-/* Bottom Right */
+/* Bottom Right - Responsive */
 .bottom-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  max-width: min(20vw, 250px);
 }
 
-/* 8. Text "In the End, it's not the years..." */
+/* 8. Text "In the End, it's not the years..." - Responsive */
 .quote-text {
-  width: 208px;
-  height: 31px;
+  width: auto;
+  max-width: min(16.25vw, 208px);
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: min(0.94vw, 12px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 5px;
+  margin-bottom: min(0.39vw, 5px);
 }
 
-/* 9. Text "-Abraham Lincoln"" */
+/* 9. Text "-Abraham Lincoln" - Responsive */
 .quote-author {
-  width: 100px;
-  height: 15px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
   color: #176282;
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: min(0.94vw, 12px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* Media Queries for better mobile experience */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .real-frame {
+    width: 95vw;
+    height: auto;
+    min-height: 95vh;
+  }
+
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .panda-text {
+    text-align: center;
+    max-width: 80vw;
+  }
+
+  .birthday-text {
+    font-size: min(25vw, 200px);
+    margin-top: 0;
+  }
+
+  .happy-text {
+    position: static;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .thank-you-section {
+    position: static;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .bottom-section {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .bottom-left, .bottom-right {
+    max-width: 80vw;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .real-frame {
+    width: 98vw;
+    padding: 15px 10px;
+  }
+
+  .outline-frame {
+    padding: 20px;
+  }
+
+  .birthday-text {
+    font-size: min(30vw, 150px);
+  }
+
+  .date-number {
+    font-size: min(8vw, 36px);
+  }
+
+  .click-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
