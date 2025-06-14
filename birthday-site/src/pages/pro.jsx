@@ -10,18 +10,25 @@ function Pro() {
       <div className="outline-frame">
         {/* Top Section */}
         <div className="top-section">
-          <div className="date-section">
-            <div className="date-number">24</div>
-            <div className="date-month">june 2025</div>
-            <div className="wonderful-day">Truly a wonderful day</div>
-          </div>
-          <button className="click-button" onClick={() => navigate('/cute')}>
-            Click to be cute
-          </button>
-          <div className="panda-text">
-            Gentle as a Panda, Fierce when needed, always adorable
+          <div className="top-wrapper">
+            <div className="date-wrapper">
+              <div className="date-number">24</div>
+              <div>
+                <div className="date-month">june 2025</div>
+                <div className="wonderful-day">Truly a wonderful day</div>
+              </div>
+            </div>
+
+            <button className="click-button" onClick={() => navigate('/cute')}>
+              Click to be cute
+            </button>
+
+            <div className="panda-text">
+              Gentle as a Panda, Fierce when needed, always adorable
+            </div>
           </div>
         </div>
+
 
         {/* Thank You Section (Left) */}
         <div className="thank-you-section">

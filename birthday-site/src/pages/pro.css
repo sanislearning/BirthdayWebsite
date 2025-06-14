@@ -22,24 +22,32 @@ body {
 /* 1. Real Frame (Outermost frame) - Now responsive */
 .real-frame {
   display: flex;
-  width: min(90vw, 1280px);
-  height: min(90vh, 832px);
-  padding: min(2.1vw, 27px) min(1.5vw, 19px) min(2vw, 26px) min(1.5vw, 19px);
+  width: 100vw;
+  height: 100vh;
+  padding: 27px 19px 26px 19px;
   justify-content: center;
   align-items: center;
   background: #F2F2E8;
-  margin: 0 auto;
 }
+
+
 
 /* 2. Outline Frame - Responsive */
 .outline-frame {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   flex-shrink: 0;
   border: 2px solid #0068A7;
-  position: relative;
   padding: min(3.1vw, 40px);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center children vertically */
+  align-items: center;     /* center children horizontally */
+  
 }
+
+
 
 /* 3. BIRTHDAY Text - Responsive font size */
 .birthday-text {
