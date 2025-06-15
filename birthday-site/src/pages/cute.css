@@ -1,19 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Main wrapper for the page */
 .cute-page {
-  background-color: #ffe6f0;
-  font-family: "Comic Sans MS", cursive;
-  color: #ff69b4;
-  text-align: center;
+  min-height: 100vh;                  /* Full screen height */
+  width: 100vw;                       /* Full screen width */
+  background: #5EA1FF;                /* Blue background */
+  overflow-y: auto;                   /* Allows vertical scroll */
+  font-family: "Comic Sans MS", cursive; /* Cute font */
+  color: #ff69b4;                     /* Pink text */
+  text-align: center;                 /* Center align content */
   padding: 2rem;
+  box-sizing: border-box;
 }
 
-.cute-gif {
-  width: 250px;
-  margin: 1rem auto;
-  border-radius: 20px;
+/* Semicircle Text Container */
+.semi-circle-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  overflow: visible;         /* ensures SVG is not clipped */
 }
 
+/* Button to navigate to pro page */
 .cute-button {
-  background-color: #ffb6c1;
+  background-color: #ffb6c1;          /* Light pink */
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -21,9 +33,18 @@
   font-size: 1.2rem;
   cursor: pointer;
   margin-top: 2rem;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .cute-button:hover {
-  background-color: #ff69b4;
+  background-color: #ff69b4;          /* Darker pink on hover */
+}
+
+.birthday-text {
+  fill: #FFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

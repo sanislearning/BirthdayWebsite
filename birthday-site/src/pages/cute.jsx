@@ -7,13 +7,26 @@ function Cute() {
 
   return (
     <div className="cute-page">
-      <h1>You're the Cutest 🎀</h1>
-      <img
-        src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif"
-        alt="Cute"
-        className="cute-gif"
-      />
-      <p>Hope this page makes you smile!</p>
+      {/* Semicircle Text */}
+      <div className="semi-circle-text">
+      <svg viewBox="0 0 1200 700" width="1000" height="300">
+        <defs>
+          <path
+            id="semiPath"
+            d="M 200,600 A 400,400 0 0 1 1000,600"
+            fill="transparent"
+          />
+        </defs>
+        <text className="birthday-text">
+          <textPath href="#semiPath" startOffset="50%" textAnchor="middle">
+            Happy Birthday Siva
+          </textPath>
+        </text>
+      </svg>
+
+      </div>
+
+      {/* Navigation Button */}
       <button className="cute-button" onClick={() => navigate('/pro')}>
         Click to be Professional 💼
       </button>
