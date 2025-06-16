@@ -32,7 +32,7 @@ function Cute() {
               fill="transparent"
             />
           </defs>
-          <text className="birthday-text">
+          <text className="cute-birthday-text">
             <textPath href="#semiPath" startOffset="50%" textAnchor="middle">
               Happy Birthday Siva
             </textPath>
