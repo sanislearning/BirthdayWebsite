@@ -24,7 +24,7 @@ function Cute() {
 
       {/* Semicircle Text and Fireworks Container */}
       <div className="semi-circle-container">
-        <svg viewBox="0 0 1000 500" width="100%" height="auto">
+        <svg viewBox="0 0 1000 500" width="100%" height="300">
           <defs>
             <path
               id="semiPath"

@@ -2,16 +2,17 @@
 
 /* Main wrapper for the page */
 .cute-page {
-  /* min-height: 100vh; */ /* Remove min-height to allow content to dictate height */
   width: 100vw;
+  min-height: 100vh; /* Use min-height instead of height */
   background: #5EA1FF;
-  overflow-y: auto; /* Allow vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  font-family:  'Playfair Display', serif;
+  overflow-y: auto;
+  overflow-x: hidden; /* Changed to hidden to prevent horizontal scroll */
+  font-family: 'Playfair Display', serif;
   color: #ffffff;
   text-align: center;
-  position: relative; /* Crucial for absolute positioning of children */
+  position: relative;
   box-sizing: border-box;
+  padding-bottom: 50px; /* Add padding at bottom */
 }
 
 /* Top Part (Thank you and No fireworks text) */
@@ -22,10 +23,9 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  /* Remove absolute positioning - use normal flow */
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .Thank-annoying {
@@ -50,25 +50,19 @@
 .semi-circle-container {
   position: relative;
   width: 100%;
-  /* Adjust height to accommodate resized SVG and fireworks */
-  height: 400px; /* Reduced from 500px */
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Margin top to push it down from the top absolute content */
-  margin-top: 100px; /* Increased margin-top to clear top absolute elements */
-  margin-bottom: 50px; /* Add margin-bottom to push button down */
+  margin: 50px 0; /* Add margin top and bottom */
 }
 
-/* Adjusted SVG size within its container */
 .semi-circle-container svg {
   display: block;
   margin: 0 auto;
-  /* Adjust SVG width for overall size decrease. Height will scale proportionally. */
-  width: 80%; /* Adjusted width, was 100% in JSX. Keeping auto height from JSX. */
-  max-width: 800px; /* Optional: limit maximum width */
+  width: 80%;
+  max-width: 800px;
 }
-
 
 .birthday-text {
   fill: #FFF;
@@ -77,8 +71,7 @@
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
-  /* Decrease font size of SVG text */
-  font-size: 72px; /* Decreased from 96px */
+  font-size: 72px;
 }
 
 .fireworks {
@@ -91,44 +84,17 @@
   z-index: 5;
 }
 
-
-/* Button to navigate to pro page */
-.cute-button {
-  background-color: #ffb6c1;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  /* IMPORTANT: Remove position: relative; if it causes issues, or ensure it's not hidden */
-  /* Making it static will place it in the normal flow */
-  position: static; /* Change to static to be in normal document flow */
-  margin-top: 2rem; /* Ensure there's space above it */
-  margin-bottom: 250px; /* Push content below it, making page scrollable */
-  transition: background-color 0.3s ease;
-  z-index: 10; /* Ensure it's on top */
-  display: block; /* Make it a block element to take its own line and center with margin auto */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cute-button:hover {
-  background-color: #ff69b4;
-}
-
 /* Bottom Part (Happy 20th birthday text and GIFs) */
 .initial-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center; /* Changed from flex-end to center */
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+  /* Remove absolute positioning */
+  position: relative;
+  margin: 50px 0;
 }
 
 .butterfly {
@@ -151,5 +117,81 @@
   font-size: 24px;
   text-align: center;
   flex-grow: 1;
+  padding: 0 20px;
+}
+
+/* Add missing CSS for new elements */
+.animal {
+  margin: 40px 20px;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.noodles {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.noodleMouse {
+  margin: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.you {
+  margin: 50px 20px;
+  padding: 0 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.real-bottom {
+  margin-top: 50px;
+  padding: 40px 20px;
+}
+
+.hearts {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.heart-gif {
+  width: 150px;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Button to navigate to pro page */
+.cute-button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  display: block;
+}
+
+.cute-button:hover {
+  background-color: #ff69b4;
+}
+
+.stars {
+  width: 120px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.song-selection {
+  margin: 30px 20px;
+  font-size: 18px;
   padding: 0 20px;
 }
