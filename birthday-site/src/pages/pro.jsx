@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './pro.css';
-import personImage from '../assets/person.png'; // ✅ correct
+import personImage from '../assets/person.png'; 
 
 function Pro() {
   const navigate = useNavigate();

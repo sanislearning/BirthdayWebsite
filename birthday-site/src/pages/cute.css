@@ -2,25 +2,31 @@
 
 /* Main wrapper for the page */
 .cute-page {
-  min-height: 100vh;                  /* Full screen height */
-  width: 100vw;                       /* Full screen width */
-  background: #5EA1FF;                /* Blue background */
-  overflow-y: auto;                   /* Allows vertical scroll */
-  font-family: "Comic Sans MS", cursive; /* Cute font */
-  color: #ff69b4;                     /* Pink text */
-  text-align: center;                 /* Center align content */
-  padding: 2rem;
+  min-height: 100vh;
+  width: 100vw;
+  background: #5EA1FF;
+  overflow-y: auto;
+  font-family: "Comic Sans MS", cursive;
+  color: #ff69b4;
+  text-align: center;
+  padding-top: 5rem; /* Add space from the top */
+  padding-bottom: 2rem;
   box-sizing: border-box;
+  position: relative;
 }
 
-/* Semicircle Text Container */
 .semi-circle-text {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  overflow: visible;         /* ensures SVG is not clipped */
+  margin-top: 2rem;
+  overflow: visible;
+}
+
+.birthday-text {
+  fill: #FFF;
+  font-family: 'Playfair', serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Button to navigate to pro page */
@@ -40,11 +46,57 @@
   background-color: #ff69b4;          /* Darker pink on hover */
 }
 
-.birthday-text {
-  fill: #FFF;
-  font-family: 'Playfair Display', serif;
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.fireworks {
+  width: 200px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.Thankyou-annoying {
+width: 444px;
+height: 58px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Playfair;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.no-fireworks {
+width: 314px;
+height: 41px;
+flex-shrink: 0;
+color: #FFF;
+text-align: right;
+font-family: Playfair;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.butterfly{
+width: 99.31px;
+height: 90px;
+flex-shrink: 0;
+aspect-ratio: 99.31/90.00;
+}
+.pandas{
+width: 181px;
+height: 181px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+}
+.happy-20{
+width: 526px;
+height: 29px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Playfair;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
