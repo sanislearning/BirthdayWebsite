@@ -2,101 +2,154 @@
 
 /* Main wrapper for the page */
 .cute-page {
-  min-height: 100vh;
+  /* min-height: 100vh; */ /* Remove min-height to allow content to dictate height */
   width: 100vw;
   background: #5EA1FF;
-  overflow-y: auto;
-  font-family: "Comic Sans MS", cursive;
-  color: #ff69b4;
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family:  'Playfair Display', serif;
+  color: #ffffff;
   text-align: center;
-  padding-top: 5rem; /* Add space from the top */
-  padding-bottom: 2rem;
+  position: relative; /* Crucial for absolute positioning of children */
   box-sizing: border-box;
-  position: relative;
 }
 
-.semi-circle-text {
-  margin-top: 2rem;
-  overflow: visible;
+/* Top Part (Thank you and No fireworks text) */
+.Top-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
+
+.Thank-annoying {
+  color: #FFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  text-align: left;
+  max-width: 450px;
+  padding-left: 20px;
+}
+
+.no-fireworks {
+  color: #FFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  text-align: right;
+  max-width: 350px;
+  padding-right: 20px;
+}
+
+/* Semicircle Text and Fireworks Container */
+.semi-circle-container {
+  position: relative;
+  width: 100%;
+  /* Adjust height to accommodate resized SVG and fireworks */
+  height: 400px; /* Reduced from 500px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Margin top to push it down from the top absolute content */
+  margin-top: 100px; /* Increased margin-top to clear top absolute elements */
+  margin-bottom: 50px; /* Add margin-bottom to push button down */
+}
+
+/* Adjusted SVG size within its container */
+.semi-circle-container svg {
+  display: block;
+  margin: 0 auto;
+  /* Adjust SVG width for overall size decrease. Height will scale proportionally. */
+  width: 80%; /* Adjusted width, was 100% in JSX. Keeping auto height from JSX. */
+  max-width: 800px; /* Optional: limit maximum width */
+}
+
 
 .birthday-text {
   fill: #FFF;
-  font-family: 'Playfair', serif;
-  font-size: 96px;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-transform: capitalize;
+  /* Decrease font size of SVG text */
+  font-size: 72px; /* Decreased from 96px */
 }
+
+.fireworks {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
 
 /* Button to navigate to pro page */
 .cute-button {
-  background-color: #ffb6c1;          /* Light pink */
+  background-color: #ffb6c1;
   color: white;
   border: none;
   padding: 1rem 2rem;
   border-radius: 12px;
   font-size: 1.2rem;
   cursor: pointer;
-  margin-top: 2rem;
+  /* IMPORTANT: Remove position: relative; if it causes issues, or ensure it's not hidden */
+  /* Making it static will place it in the normal flow */
+  position: static; /* Change to static to be in normal document flow */
+  margin-top: 2rem; /* Ensure there's space above it */
+  margin-bottom: 250px; /* Push content below it, making page scrollable */
   transition: background-color 0.3s ease;
+  z-index: 10; /* Ensure it's on top */
+  display: block; /* Make it a block element to take its own line and center with margin auto */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cute-button:hover {
-  background-color: #ff69b4;          /* Darker pink on hover */
+  background-color: #ff69b4;
 }
 
-.fireworks {
-  width: 200px;
-  margin: 2rem auto;
-  display: block;
+/* Bottom Part (Happy 20th birthday text and GIFs) */
+.initial-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
-.Thankyou-annoying {
-width: 444px;
-height: 58px;
-flex-shrink: 0;
-color: #FFF;
-font-family: Playfair;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.butterfly {
+  width: 99.31px;
+  height: 90px;
+  flex-shrink: 0;
+  margin-left: 20px;
 }
 
-.no-fireworks {
-width: 314px;
-height: 41px;
-flex-shrink: 0;
-color: #FFF;
-text-align: right;
-font-family: Playfair;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.pandas {
+  width: 181px;
+  height: 181px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
-.butterfly{
-width: 99.31px;
-height: 90px;
-flex-shrink: 0;
-aspect-ratio: 99.31/90.00;
-}
-.pandas{
-width: 181px;
-height: 181px;
-flex-shrink: 0;
-aspect-ratio: 1/1;
-}
-.happy-20{
-width: 526px;
-height: 29px;
-flex-shrink: 0;
-color: #FFF;
-font-family: Playfair;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.happy-20 {
+  color: #FFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+  padding: 0 20px;
 }
