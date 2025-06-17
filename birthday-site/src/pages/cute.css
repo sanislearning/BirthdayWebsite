@@ -50,12 +50,14 @@
 .semi-circle-container {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0; /* Add margin top and bottom */
+  margin: 50px 0;
+  overflow: visible;
 }
+
 
 .semi-circle-container svg {
   display: block;
@@ -67,12 +69,10 @@
 .cute-birthday-text {
   fill: #FFF;
   font-family: 'Playfair Display', serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-size: 64px;
   text-transform: capitalize;
-  font-size: 72px;
 }
+
 
 .fireworks {
   position: absolute;
@@ -155,25 +155,33 @@ flex-shrink: 0;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 3rem;
   position: relative;
-  margin-top: 50px;
-  flex-wrap: wrap; /* allows elements to wrap nicely if screen is small */
+  margin-top: 60px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-/* Hearts text (bottom-left) */
+/* Left section */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+}
+
 .hearts {
   color: white;
-  font-size: 14px;
-  width: 25%;
+  font-size: 16px;
   text-align: left;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+
 }
 
-/* Heart gif (optional positioning adjustment) */
 .heart-gif {
-  width: 50px;
+  width: 60px;
   height: auto;
-  margin-top: 10px;
 }
 
 /* Center button */
@@ -186,23 +194,31 @@ flex-shrink: 0;
   color: #0068A7;
   border: none;
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   font-family: 'Habibi', serif;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/* Right-side stars and message */
+/* Right section */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+}
+
 .stars {
-  width: 50px;
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
 }
 
 .song-selection {
   color: white;
-  font-size: 14px;
-  width: 25%;
+  font-size: 16px;
   text-align: right;
+  font-family: 'Playfair Display', serif;
+
 }

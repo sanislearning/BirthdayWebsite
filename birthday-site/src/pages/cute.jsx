@@ -24,7 +24,7 @@ function Cute() {
 
       {/* Semicircle Text and Fireworks Container */}
       <div className="semi-circle-container">
-        <svg viewBox="0 0 1000 500" width="100%" height="300">
+        <svg viewBox="0 0 1000 500" width="100%" height="100%">
           <defs>
             <path
               id="semiPath"
@@ -67,24 +67,29 @@ function Cute() {
         I hope as the years continue, you will still smile at the things that trouble you and find your own way.
       </div>
 
-      <div className="real-bottom">
+    <div className="real-bottom">
+      {/* Left side */}
+      <div className="left-section">
         <div className="hearts">
           A bunch of hearts cause why not
         </div>
-
         <img src={hearts} alt="flying hearts" className='heart-gif'/>
+      </div>
 
-        <button className="cute-button" onClick={() => navigate('/pro')}>
+      {/* Center button */}
+      <button className="cute-button" onClick={() => navigate('/pro')}>
         Click to be Professional
-        </button>
+      </button>
 
+      {/* Right side */}
+      <div className="right-section">
         <img src={stars} alt="rotating stars" className="stars"/>
         <div className="song-selection">
           I hope you enjoy my song selection, truly one of the greatest songs of all time
         </div>
-
-
       </div>
+    </div>
+
 
     </div>
   );
