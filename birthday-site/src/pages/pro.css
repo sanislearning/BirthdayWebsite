@@ -9,12 +9,9 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden; /* prevent horizontal scrolling only */
   overflow-y: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #F2F2E8;
 }
 
