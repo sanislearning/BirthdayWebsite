@@ -32,14 +32,20 @@ function Cute() {
               fill="transparent"
             />
           </defs>
-          <text className="cute-birthday-text">
-            <textPath href="#semiPath" startOffset="50%" textAnchor="middle">
+
+          <text className="cute-birthday-text" fontSize="48">
+            <textPath
+              href="#semiPath"
+              startOffset="50%"
+              textAnchor="middle"
+            >
               Happy Birthday Siva
             </textPath>
           </text>
         </svg>
-        <img src={Firework} alt="fireworks" className='fireworks' />
+        <img src={Firework} alt="fireworks" className="fireworks" />
       </div>
+
 
       
 
