@@ -1,12 +1,11 @@
-````markdown
-````
-### 💖 Cute Birthday Website Template
+```markdown
+# 💖 Cute Birthday Website Template
 
 A heartfelt, customizable birthday website built using **React**, perfect for surprising your significant other (or anyone special) with something creative, personal, and adorably unique. Complete with GIFs, pastel aesthetics, animations, and a switchable "professional" mode — it's your digital love letter wrapped in code.
 
-````
-````
-### 🌸 Features
+---
+
+## 🌸 Features
 
 - 🎉 Animated birthday greeting with fireworks and a curved SVG message  
 - 🐭 Adorable themed GIFs (dancing panda, noodle mouse, butterflies, and more)  
@@ -15,23 +14,23 @@ A heartfelt, customizable birthday website built using **React**, perfect for su
 - 🎵 A section to link your song dedication  
 - 🌈 Designed to be cute, fun, and genuinely touching  
 
-````
-````
-### 🧠 Why This Exists
+---
+
+## 🧠 Why This Exists
 
 Writing long birthday messages in DMs is sweet, but building a **personalized website**? That’s next level.  
 This project was originally created as a birthday surprise and can now be reused by anyone who wants to show love using code.
 
 ---
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 
 ### 1. Clone the repo
 
 ```bash
 git clone https://github.com/yourusername/birthday-template.git
 cd birthday-template
-````
+```
 
 ### 2. Install dependencies
 
@@ -51,15 +50,15 @@ npm run dev
 
 Edit the following files to personalize the website:
 
-* `Cute.jsx`: update the messages, layout, and images
-* `cute.css`: tweak styles like fonts, colors, and spacing
-* `assets/`: replace GIFs and media with your own (e.g. different animals, fireworks, favorite emojis)
+- `Cute.jsx`: update the messages, layout, and images  
+- `cute.css`: tweak styles like fonts, colors, and spacing  
+- `assets/`: replace GIFs and media with your own (e.g. different animals, fireworks, favorite emojis)  
 
 You can even:
 
-* Replace the text with inside jokes or shared memories
-* Add your favorite background music
-* Change the background color or theme for extra personality
+- Replace the text with inside jokes or shared memories  
+- Add your favorite background music  
+- Change the background color or theme for extra personality  
 
 ### 5. Build and deploy
 
@@ -73,10 +72,10 @@ Deploy your site to **Vercel**, **Netlify**, **GitHub Pages**, or any static hos
 
 ## 💡 Bonus Ideas
 
-* Add a song autoplay feature
-* Include a photo slideshow
-* Make an animated timeline of your story
-* Add confetti animation or custom cursor
+- Add a song autoplay feature  
+- Include a photo slideshow  
+- Make an animated timeline of your story  
+- Add confetti animation or custom cursor  
 
 ---
 
@@ -84,6 +83,9 @@ Deploy your site to **Vercel**, **Netlify**, **GitHub Pages**, or any static hos
 
 MIT License — feel free to use, remix, and share as long as you're spreading joy 💕
 
+---
 
 Made with 💖 and far too many GIFs.
 ```
+
+---
