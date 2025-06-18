@@ -1,15 +1,11 @@
-Your markdown is beautifully done! Just one quick fix: you accidentally started with ` ````markdown` (four backticks) and never closed that properly. Here's the corrected version wrapped cleanly in a single Markdown code block that GitHub can render:
-
----
-
 ````markdown
 # 💖 Cute Birthday Website Template
 
 A heartfelt, customizable birthday website built using **React**, perfect for surprising your significant other (or anyone special) with something creative, personal, and adorably unique. Complete with GIFs, pastel aesthetics, animations, and a switchable "professional" mode — it's your digital love letter wrapped in code.
 
 ---
-
-## 🌸 Features
+````
+### 🌸 Features
 
 - 🎉 Animated birthday greeting with fireworks and a curved SVG message  
 - 🐭 Adorable themed GIFs (dancing panda, noodle mouse, butterflies, and more)  
@@ -18,16 +14,17 @@ A heartfelt, customizable birthday website built using **React**, perfect for su
 - 🎵 A section to link your song dedication  
 - 🌈 Designed to be cute, fun, and genuinely touching  
 
+````
 ---
-
-## 🧠 Why This Exists
+````
+### 🧠 Why This Exists
 
 Writing long birthday messages in DMs is sweet, but building a **personalized website**? That’s next level.  
 This project was originally created as a birthday surprise and can now be reused by anyone who wants to show love using code.
 
 ---
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 ### 1. Clone the repo
 
@@ -107,7 +104,4 @@ MIT License — feel free to use, remix, and share as long as you're spreading j
 
 Made with 💖 and far too many GIFs.
 
-```
-
----
 ```
