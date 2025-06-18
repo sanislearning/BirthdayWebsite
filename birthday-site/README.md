@@ -1,9 +1,11 @@
 ````markdown
-# 💖 Cute Birthday Website Template
+````
+### 💖 Cute Birthday Website Template
 
 A heartfelt, customizable birthday website built using **React**, perfect for surprising your significant other (or anyone special) with something creative, personal, and adorably unique. Complete with GIFs, pastel aesthetics, animations, and a switchable "professional" mode — it's your digital love letter wrapped in code.
 
 ---
+````
 ````
 ### 🌸 Features
 
@@ -71,22 +73,6 @@ Deploy your site to **Vercel**, **Netlify**, **GitHub Pages**, or any static hos
 
 ---
 
-## 📁 Folder Structure
-
-```
-src/
-├── assets/              # All images and GIFs
-├── components/
-│   └── Cute.jsx         # Main birthday page (cute version)
-│   └── Pro.jsx          # Alternate professional-themed version
-├── App.jsx
-├── main.jsx
-└── styles/
-    └── cute.css         # Styling for cute layout
-```
-
----
-
 ## 💡 Bonus Ideas
 
 * Add a song autoplay feature
@@ -103,5 +89,4 @@ MIT License — feel free to use, remix, and share as long as you're spreading j
 ---
 
 Made with 💖 and far too many GIFs.
-
 ```
