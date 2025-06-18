@@ -1,3 +1,4 @@
+Your markdown is beautifully done! Just one quick fix: you accidentally started with ` ````markdown` (four backticks) and never closed that properly. Here's the corrected version wrapped cleanly in a single Markdown code block that GitHub can render:
 
 ---
 
@@ -10,12 +11,12 @@ A heartfelt, customizable birthday website built using **React**, perfect for su
 
 ## 🌸 Features
 
-- 🎉 Animated birthday greeting with fireworks and a curved SVG message
-- 🐭 Adorable themed GIFs (dancing panda, noodle mouse, butterflies, and more)
-- 💬 Sweet customizable messages
-- 💗 "Click to be professional" button to toggle between cute and professional styles
-- 🎵 A section to link your song dedication
-- 🌈 Designed to be cute, fun, and genuinely touching
+- 🎉 Animated birthday greeting with fireworks and a curved SVG message  
+- 🐭 Adorable themed GIFs (dancing panda, noodle mouse, butterflies, and more)  
+- 💬 Sweet customizable messages  
+- 💗 "Click to be professional" button to toggle between cute and professional styles  
+- 🎵 A section to link your song dedication  
+- 🌈 Designed to be cute, fun, and genuinely touching  
 
 ---
 
@@ -26,14 +27,14 @@ This project was originally created as a birthday surprise and can now be reused
 
 ---
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 
 ### 1. Clone the repo
 
 ```bash
 git clone https://github.com/yourusername/birthday-template.git
 cd birthday-template
-```
+````
 
 ### 2. Install dependencies
 
@@ -98,7 +99,6 @@ src/
 
 ---
 
-
 ## 💌 License
 
 MIT License — feel free to use, remix, and share as long as you're spreading joy 💕
@@ -107,4 +107,7 @@ MIT License — feel free to use, remix, and share as long as you're spreading j
 
 Made with 💖 and far too many GIFs.
 
-````
+```
+
+---
+```
