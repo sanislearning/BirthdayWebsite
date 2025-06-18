@@ -4,7 +4,6 @@
 
 A heartfelt, customizable birthday website built using **React**, perfect for surprising your significant other (or anyone special) with something creative, personal, and adorably unique. Complete with GIFs, pastel aesthetics, animations, and a switchable "professional" mode — it's your digital love letter wrapped in code.
 
----
 ````
 ````
 ### 🌸 Features
@@ -17,7 +16,6 @@ A heartfelt, customizable birthday website built using **React**, perfect for su
 - 🌈 Designed to be cute, fun, and genuinely touching  
 
 ````
----
 ````
 ### 🧠 Why This Exists
 
@@ -86,7 +84,6 @@ Deploy your site to **Vercel**, **Netlify**, **GitHub Pages**, or any static hos
 
 MIT License — feel free to use, remix, and share as long as you're spreading joy 💕
 
----
 
 Made with 💖 and far too many GIFs.
 ```
