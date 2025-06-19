@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 10px 0;
   overflow: visible;
 }
 
@@ -90,25 +90,27 @@
   justify-content: space-between;
   align-items: center; /* Changed from flex-end to center */
   width: 100%;
-  padding-top: 70px;
+  padding-top: 0px;
   box-sizing: border-box;
   /* Remove absolute positioning */
   position: relative;
-  margin: 50px 0;
+  margin: 10px 0;
 }
 
 .butterfly {
-  width: 99.31px;
-  height: 90px;
+  width: 80px;
+  height: auto;
   flex-shrink: 0;
   margin-left: 20px;
+  transform: translateY(-30px);
 }
 
 .pandas {
-  width: 181px;
-  height: 181px;
+  width: 160px;
+  height: auto;
   flex-shrink: 0;
   margin-right: 20px;
+  transform: translateY(-40px);
 }
 
 .happy-20 {
@@ -180,7 +182,7 @@ flex-shrink: 0;
 }
 
 .heart-gif {
-  width: 60px;
+  width: 100px;
   height: auto;
 }
 
@@ -210,7 +212,7 @@ flex-shrink: 0;
 }
 
 .stars {
-  width: 60px;
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
