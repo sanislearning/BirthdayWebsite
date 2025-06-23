@@ -69,7 +69,7 @@ function Cute() {
 
       {/*Middle Center Text*/}
       <div className="you">
-        You are quite honestly the kind of person, who, when life gives her lemons, looks awkwardly at life and smile because you can’t really figure out what you should do. Thankfully your awkward smiles are one of the prettiest things about you. That works out pretty well.
+        You are quite honestly the kind of person, who, when life gives her lemons, looks awkwardly at life and smiles because you can’t really decide what exactly you wish to do. Thankfully your awkward smiles are one of the prettiest things about you. That works out pretty well.
         I hope as the years continue, you will still smile at the things that trouble you and find your own way.
       </div>
 

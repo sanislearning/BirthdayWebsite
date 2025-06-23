@@ -60,6 +60,24 @@ function Pro() {
         {/* 🖼️ Person image at bottom center */}
         <img src={personImage} alt="person" className="person-image" />
       </div>
+
+      <audio id="bg-music" loop autoPlay>
+        <source src="/birthday-song.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <button className="mute-button" onClick={() => {
+        const audio = document.getElementById("bg-music");
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }}>
+        🔊
+      </button>
+
+
     </div>
   );
 }
